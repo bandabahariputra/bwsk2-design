@@ -1,0 +1,194 @@
+.photo-frame {
+  border: 2px solid $primary-color;
+
+  &.photo-frame-secondary {
+    border: 2px solid $secondary-color;
+  }
+}
+
+.text-note {
+  font-size: .9rem;
+  opacity: .8;
+}
+
+// card
+.card {
+  transition: $transition;
+  
+  // card custom 1
+  &.card-custom1 {
+    border: 1px solid $primary-color;
+
+    &:hover {
+      border: 1px solid $secondary-color;
+      box-shadow: $box-shadow;
+    }
+    
+    .card-header {
+      background-color: $primary-color;
+      color: #fff;
+      border-left: 1rem solid $secondary-color;
+    }
+  }
+}
+
+// jumbotron
+.jumbotron {
+  @include responsive($breakpoint-phone) {
+    height: 140px;
+  }
+  
+  position: relative;
+  width: 100%;
+  height: 240px;
+  color: $text-light-color2;
+  background-color: $text-light-color;
+  background-image: url("../img/bg/jumbotron-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -180px;
+  overflow: hidden;
+  display: flex;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .55;
+  }
+
+  .container {
+    z-index: 1;
+
+    h1 {
+      font-weight: 600;
+    }
+  }
+}
+
+// news gallery
+.news-gallery {
+  @include responsive($breakpoint-phone) {
+    padding-bottom: 50px;
+  }
+  
+  padding-bottom: 80px;
+
+  .carousel {
+    .carousel-indicators {
+      @include responsive($breakpoint-phone) {
+        bottom: -50px;
+      }
+      
+      bottom: -70px;
+      margin-left: 3%;
+      margin-right: 3%;
+      
+      li {
+        @include responsive($breakpoint-phone) {
+          height: 65px;
+        }
+        
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+        border: 2px solid #006699;
+        position: relative;
+
+        &.active {
+          border: 2px solid $secondary-color;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+// pagination
+ul.pagination {
+  list-style-type: none !important;
+  
+  .page-item {
+    .page-link {
+      color: $primary-color !important;
+    }
+  }
+
+  .page-item.disabled {
+    .page-link {
+      color: #6c757d !important;
+    }
+  }
+
+  .page-item.active {
+    .page-link {
+      color: $text-light-color2 !important;
+    }
+  }
+}
+
+// infografis widget
+.widget-infografis {
+  @include responsive($breakpoint-tablet) {
+    margin-bottom: 2rem;
+  }
+  
+  // img {
+  //   @include responsive($breakpoint-tablet) {
+  //     height: 650px;
+  //   }
+
+  //   @include responsive($breakpoint-phone) {
+  //     height: 550px;
+  //   }
+    
+  //   .content & {
+  //     height: 450px;
+  //   }
+    
+  //   height: 320px;
+  //   object-fit: cover;
+  //   border: none !important;
+  // }
+}
+
+// profile sidebar widget
+.widget-profile-sidebar {
+  ul {
+    list-style-type: none;
+    padding: 0 0 0 1rem;
+    margin-bottom: 0;
+    
+    li {
+      font-weight: 500;
+      margin-top: .5rem;
+
+      &::before {
+        content: "\f105";
+        font-family: "Font Awesome\ 5 Free"; 
+        font-weight: 900; /* Fix version 5.0.9 */
+        margin-right: .5rem;
+      }
+
+      a {
+        transition: $transition;
+
+        &:hover {
+          color: $text-dark-color2 !important;
+        }
+      }
+    }
+  }
+}

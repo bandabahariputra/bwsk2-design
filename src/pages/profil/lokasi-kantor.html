@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./head.html", {
+    "path": "../..",
+    "title": "Lokasi Kantor"
+  })
+<body>
+  
+  <!-- topbar -->
+  @@include("./topbar.html", { "path": "../.." })
+
+  <!-- navbar -->
+  @@include("./navbar.html", { "path": "../.." })
+
+  <!-- content -->
+  <section class="content office-location mb-5">
+    <div class="jumbotron">
+      <div class="container my-auto">
+        <h1>Lokasi Kantor</h1>
+      </div>
+    </div>
+    <div class="container mt-5 content-body">
+      <div class="row">
+        <div class="col-12 col-lg-8 content-body__main">
+          <h2>Lokasi Kantor</h2>
+          <div class="border-bottom">
+            <div class="office-location-map mb-3">
+              <iframe class="photo-frame" src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3983.0999926463187!2d114.56452814984524!3d-3.325466842174425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-3.3254721999999997!2d114.5667222!5e0!3m2!1sid!2sid!4v1598968724036!5m2!1sid!2sid" width="100%" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <span class="text-note">Lokasi Kantor Balai Wilayah Sungai Kalimantan II</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              @@include("./widgets/profile-sidebar.html", { "path": "../.." })
+            </div>
+            <div class="col-12 mt-3">
+              @@include("./widgets/infografis.html", { "path": "../.." })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  @@include("./footer.html", { "path": "../.." })
+  
+  @@include("./script.html", { "path": "../.." })
+</body>
+</html>

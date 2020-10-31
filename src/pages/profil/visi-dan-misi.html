@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./head.html", {
+    "path": "../..",
+    "title": "Visi dan Misi"
+  })
+<body>
+  
+  <!-- topbar -->
+  @@include("./topbar.html", { "path": "../.." })
+
+  <!-- navbar -->
+  @@include("./navbar.html", { "path": "../.." })
+
+  <!-- content -->
+  <section class="content mb-5">
+    <div class="jumbotron">
+      <div class="container my-auto">
+        <h1>Visi dan Misi</h1>
+      </div>
+    </div>
+    <div class="container mt-5 content-body">
+      <div class="row">
+        <div class="col-12 col-lg-8 content-body__main">
+          <h2>Visi dan Misi</h2>
+          <div class="border-bottom">
+            <p>
+              Sebagai salah satu Balai Wilayah Sungai di lingkungan Direktorat Jenderal Sumber Daya Air Kementerian Pekerjaan Umum dan Perumahan Rakyat yang bertanggung jawab untuk menjabarkan visi dan misi Ditjen SDA, maka Balai Wilayah Sungai Kalimantan II dalam menjalankan institusi menetapkan visi:
+            </p>
+            <p>
+              <b>“Terwujudnya kemanfaatan sumber daya air yang berkelanjutan untuk sebesar-besar kesejahteraan rakyat”</b>
+            </p>
+            <p>
+              Untuk mewujudkan visi tersebut, Balai Wilayah Sungai Kalimantan II menetapkan misi sebagai berikut :
+            </p>
+            <ul>
+              <li>
+                Mengkonservasi Sumber Daya Air secara berkelanjutan
+              </li>
+              <li>
+                Mendayagunakan Sumber Daya Air secara adil serta memenuhi persyaratan kualitas dan kuantitas untuk berbagai kebutuhan masyarakat
+              </li>
+              <li>
+                Mengendalikan daya rusak air
+              </li>
+              <li>
+                Memberdayakan dan meningkatkan peran masyarakat dan pemerintah dalam pengelolaan Sumber Daya Air
+              </li>
+              <li>
+                Meningkatkan keterbukaan serta ketersediaan data dan informasi dalam pengelolaan Sumber Daya Air
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              @@include("./widgets/profile-sidebar.html", { "path": "../.." })
+            </div>
+            <div class="col-12 mt-3">
+              @@include("./widgets/infografis.html", { "path": "../.." })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  @@include("./footer.html", { "path": "../.." })
+  
+  @@include("./script.html", { "path": "../.." })
+</body>
+</html>

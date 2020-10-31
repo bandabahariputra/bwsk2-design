@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./head.html", {
+    "path": "../..",
+    "title": "Galeri Foto"
+  })
+<body>
+  
+  <!-- topbar -->
+  @@include("./topbar.html", { "path": "../.." })
+
+  <!-- navbar -->
+  @@include("./navbar.html", { "path": "../.." })
+
+  <!-- content -->
+  <section class="content gallery-photo mb-5">
+    <div class="jumbotron">
+      <div class="container my-auto">
+        <h1>Galeri Foto</h1>
+      </div>
+    </div>
+    <div class="container mt-5 content-body">
+      <div class="row">
+        <div class="col-12 col-lg-8 content-body__main">
+          <h2>Galeri Foto</h2>
+          <div class="border-bottom">
+            <div class="row row-cols-1 row-cols-md-3 g-2 g-md-4">
+              <div class="col">
+                <a class="chocolat-photo" href="../../assets/img/galeri-foto/galeri-foto1.jpeg" title="Galeri Foto 1">
+                  <img src="../../assets/img/galeri-foto/galeri-foto1.jpeg" class="img-fluid gallery-photo-item">
+                </a>
+              </div>
+              <div class="col">
+                <a class="chocolat-photo" href="../../assets/img/galeri-foto/galeri-foto2.png" title="Galeri Foto 2">
+                  <img src="../../assets/img/galeri-foto/galeri-foto2.png" class="img-fluid gallery-photo-item">
+                </a>
+              </div>
+              <div class="col">
+                <a class="chocolat-photo" href="../../assets/img/galeri-foto/galeri-foto3.jpg" title="Galeri Foto 3">
+                  <img src="../../assets/img/galeri-foto/galeri-foto3.jpg" class="img-fluid gallery-photo-item">
+                </a>
+              </div>
+              <div class="col">
+                <a class="chocolat-photo" href="../../assets/img/galeri-foto/galeri-foto4.jpg" title="Galeri Foto 4">
+                  <img src="../../assets/img/galeri-foto/galeri-foto4.jpg" class="img-fluid gallery-photo-item">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12 infografis">
+              @@include("./widgets/infografis.html", { "path": "../.." })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  @@include("./footer.html", { "path": "../.." })
+  
+  @@include("./script.html", { "path": "../.." })
+</body>
+</html>

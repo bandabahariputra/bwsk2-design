@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./head.html", {
+    "path": "..",
+    "title": "Sitemap"
+  })
+<body>
+  
+  <!-- topbar -->
+  @@include("./topbar.html", { "path": ".." })
+
+  <!-- navbar -->
+  @@include("./navbar.html", { "path": ".." })
+
+  <!-- content -->
+  <section class="content mb-5">
+    <div class="jumbotron">
+      <div class="container my-auto">
+        <h1>Sitemap</h1>
+      </div>
+    </div>
+    <div class="container mt-5 content-body">
+      <div class="row">
+        <div class="col-12 col-lg-8 content-body__main">
+          <h2>Sitemap</h2>
+          <div class="border-bottom">
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Profil</a></li>
+              <ul>
+                <li><a href="#">Sejarah</a></li>
+                <li><a href="#">Visi dan Misi</a></li>
+                <li><a href="#">Tugas dan Fungsi</a></li>
+                <li><a href="#">Struktur Organisasi</a></li>
+                <li><a href="#">Informasi Pejabat Strutural</a></li>
+                <li><a href="#">Informasi Pejabat Fungsional</a></li>
+                <li><a href="#">Lokasi Kantor</a></li>
+              </ul>
+              <li><a href="#">Satuan Kerja</a></li>
+              <ul>
+                <li><a href="#">SATKER BWS Kalimanta II</a></li>
+                <li><a href="#">SNVT PJSA WS Barito Prov. KALSEL</a></li>
+                <li><a href="$">SNVT PJPA WS Barito Prov. KALSEL</a></li>
+                <li><a href="#">SATKER OP SDA Kalimantan II</a></li>
+                <li><a href="#">SNVT Pembangunan Bendungan BWS Kalimantan II</a></li>
+              </ul>
+              <li><a href="#">Wajib Balai</a></li>
+              <ul>
+                <li><a href="#">PBMN</a></li>
+                <li><a href="#">Sistem Manajemen Mutu</a></li>
+                <ul>
+                  <li><a href="#">Profil SMM BWS Kalimantan II</a></li>
+                  <li><a href="#">Pelaksanaan SMM (SATUAN KERJA / SNVT PJSA WS BARITO PROV KALSEL)</a></li>
+                  <li><a href="#">Pelaksanaan SMM (SATUAN KERJA / SNVT Pembangunan Bendungan)</a></li>
+                </ul>
+                <li><a href="#">Hidrologi</a></li>
+                <li><a href="#">PPNS</a></li>
+                <li><a href="#">Rekomtek</a></li>
+                <li><a href="#">SISDA</a></li>
+                <li><a href="#">TKPSDA</a></li>
+                <li><a href="#">PAI</a></li>
+                <li><a href="#">GNKPA</a></li>
+              </ul>
+              <li><a href="#">Informasi Publik</a></li>
+              <ul>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Layanan Informasi Publik (e-PPID)</a></li>
+                <li><a href="#">Produk Hukum PUPR (JDIH)</a></li>
+                <li><a href="#">Pola Wilayah Sungai</a></li>
+                <li><a href="#">Rencana Strategis (RENSTRA)</a></li>
+                <li><a href="#">LAKIP</a></li>
+              </ul>
+              <li><a href="#">WS</a></li>
+              <ul>
+                <li><a href="#">WS Barito</a></li>
+              </ul>
+              <li><a href="#">Aplikasi</a></li>
+              <li><a href="#">Galeri</a></li>
+              <ul>
+                <li><a href="#">Galeri Foto</a></li>
+                <li><a href="#">Galeri Video</a></li>
+              </ul>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12 infografis">
+              @@include("./widgets/infografis.html", { "path": ".." })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  @@include("./footer.html", { "path": ".." })
+  
+  @@include("./script.html", { "path": ".." })
+</body>
+</html>

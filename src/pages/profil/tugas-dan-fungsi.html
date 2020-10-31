@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./head.html", {
+    "path": "../..",
+    "title": "Tugas dan Fungsi"
+  })
+<body>
+  
+  <!-- topbar -->
+  @@include("./topbar.html", { "path": "../.." })
+
+  <!-- navbar -->
+  @@include("./navbar.html", { "path": "../.." })
+
+  <!-- content -->
+  <section class="content mb-5">
+    <div class="jumbotron">
+      <div class="container my-auto">
+        <h1>Tugas dan Fungsi</h1>
+      </div>
+    </div>
+    <div class="container mt-5 content-body">
+      <div class="row">
+        <div class="col-12 col-lg-8 content-body__main">
+          <h2>Tugas dan Fungsi</h2>
+          <div class="border-bottom">
+            <p>
+              Berdasarkan Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor: 20/PRT/M/2016 Tentang Organisasi dan Tata Kerja Unit Pelaksana Teknis di Kementerian Pekerjaan Umum dan Perumahan Rakyat
+            </p>
+            <p>
+              Balai Wilayah Sungai Mempunyai tugas melaksanakan pengelolaan sumber daya air di wilayah sungai yang meliputi perencanaan, pelaksanaan konstruksi, operasi dan pemeliharaan dalam rangka konservasi dan pendayagunaan sumber daya air dan pengendalian daya rusak air pada sungai, pantai, bendungan, danau, situ, embung, dan tampungan air lainnya, irigasi, rawa, tambak, air tanah, dan air baku serta pengelolaan drainase utama perkotaan
+            </p>
+            <p>
+              Dalam melaksanakan tugas Balai Wilayah Sungai menyelenggarakan fungsi:
+            </p>
+            <ul>
+              <li>
+                Penyusunan Pola Pengelolaan Sumber Daya Air Dan Rencana Pengelolaan Sumber Daya Air Pada Wilayah Sungai;
+              </li>
+              <li>
+                Penyusunan Program Pengelolaan Sumber Daya Air Dan Rencana Kegiatan Pengelolaan Sumber Daya Air Pada Wilayah Sungai;
+              </li>
+              <li>
+                Pemantauan Dan Evaluasi Penyelenggaraan/Penerapan Pola Pengelolaan Sumber Daya Air Dan Rencana Pengelolaan Sumber Daya Air;
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              @@include("./widgets/profile-sidebar.html", { "path": "../.." })
+            </div>
+            <div class="col-12 mt-3">
+              @@include("./widgets/infografis.html", { "path": "../.." })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  @@include("./footer.html", { "path": "../.." })
+  
+  @@include("./script.html", { "path": "../.." })
+</body>
+</html>

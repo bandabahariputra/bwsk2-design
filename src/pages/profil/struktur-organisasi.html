@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./head.html", {
+    "path": "../..",
+    "title": "Struktur Organisasi"
+  })
+<body>
+  
+  <!-- topbar -->
+  @@include("./topbar.html", { "path": "../.." })
+
+  <!-- navbar -->
+  @@include("./navbar.html", { "path": "../.." })
+
+  <!-- content -->
+  <section class="content mb-5">
+    <div class="jumbotron">
+      <div class="container my-auto">
+        <h1>Struktur Organisasi</h1>
+      </div>
+    </div>
+    <div class="container mt-5 content-body">
+      <div class="row">
+        <div class="col-12 col-lg-8 content-body__main">
+          <h2>Struktur Organisasi</h2>
+          <div class="border-bottom">
+            <div class="mb-3">
+              <img src="../../assets/img/profil/struktur-organisasi.jpg" alt="struktur-organisasi" class="img-fluid photo-frame">
+              <span class="text-note">Foto : Struktur Organisasi Balai Wilayah Sungai Kalimantan II</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              @@include("./widgets/profile-sidebar.html", { "path": "../.." })
+            </div>
+            <div class="col-12 mt-3">
+              @@include("./widgets/infografis.html", { "path": "../.." })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  @@include("./footer.html", { "path": "../.." })
+  
+  @@include("./script.html", { "path": "../.." })
+</body>
+</html>

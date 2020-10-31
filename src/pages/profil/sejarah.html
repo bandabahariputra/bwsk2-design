@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./head.html", {
+    "path": "../..",
+    "title": "Sejarah"
+  })
+<body>
+  
+  <!-- topbar -->
+  @@include("./topbar.html", { "path": "../.." })
+
+  <!-- navbar -->
+  @@include("./navbar.html", { "path": "../.." })
+
+  <!-- content -->
+  <section class="content mb-5">
+    <div class="jumbotron">
+      <div class="container my-auto">
+        <h1>Sejarah</h1>
+      </div>
+    </div>
+    <div class="container mt-5 content-body">
+      <div class="row">
+        <div class="col-12 col-lg-8 content-body__main">
+          <h2>Sejarah</h2>
+          <div class="border-bottom">
+            <div class="mb-3">
+              <img src="../../assets/img/profil/sejarah.jpg" alt="sejarah" class="img-fluid photo-frame">
+              <span class="text-note">Foto : Kantor Balai Wilayah Sungai Kalimantan II</span>
+            </div>
+            <p>
+              Balai Wilayah Sungai Kalimantan II, disebut sebagai “BWS Kalimantan II”, terbentuk pada tahun 2006, sejalan dengan diterapkannya otonomi daerah yang membagi tugas, wewenang dan kekuasaan antara Pemerintah Pusat dan Pemerintah Daerah. Berdasarkan Peraturan Menteri Pekerjaan Umum No. 11A/PRT/M/2006 tanggal 26 Juni 2006 tentang Kriteria dan Penetapan Wilayah Sungai , pengelolaan wilayah sungai terbagi atas wilayah sungai lintas negara; wilayah sungai lintas provinsi; wilayah sungai strategis nasional; wilayah sungai lintas kabupaten/kota; dan wilayah sungai dalam 1 (satu) kabupaten/kota. Pembagian ini secara nyata memberikan batasan atas pengelolaan wilayah sungai oleh Pemerintah Pusat, Pemerintah Provinsi, dan Pemerintah Kabupaten/Kota.
+            </p>
+            <p>
+              Balai Wilayah Sungai (BWS) sendiri dibentuk berdasarkan diterbitkannya <b>Peraturan Menteri Pekerjaan Umum 20/PRT/M/2016 tanggal 01 Juni 2016</b> tentang <b>ORGANISASI DAN TATA KERJA UNIT PELAKSANA TEKNIS DI KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT</b>. Pada tabel Lampiran 1 dalam peraturan tersebut, diuraikan tipe balai dari BWS Kalimantan II masuk ke dalam tipe A, lokasi di Kuala Kapuas, provinsi Kalimantan Tengah dan kalimantan Selatan, serta wilayah sungai sebagai Wilayah Kerja yang terdiri dari WS Mentaya-Katingan, WS Barito, WS Jelai-Kendawangan (Kalimantan Tengah) dan WS Barito (Kalimantan Selatan). Melalui peraturan ini, BWS Kalimantan II mengupayakan pengelolaan Sumber Daya Air yang optimal di Provinsi Kalimantan Tengah dan Kalimantan Selatan, khususnya pada WS Mentaya-Katingan, WS Barito, WS Jelai-Kendawangan (Kalimantan Tengah) dan WS Barito (Kalimantan Selatan) yang menjadi tanggung jawabnya.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              @@include("./widgets/profile-sidebar.html", { "path": "../.." })
+            </div>
+            <div class="col-12 mt-3">
+              @@include("./widgets/infografis.html", { "path": "../.." })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  @@include("./footer.html", { "path": "../.." })
+  
+  @@include("./script.html", { "path": "../.." })
+</body>
+</html>
