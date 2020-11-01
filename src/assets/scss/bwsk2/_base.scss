@@ -47,6 +47,19 @@ img {
   width: 100%;
 }
 
+// background
+.background {
+  opacity: .3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
 // text truncate
 .truncate-overflow {
   &.truncate-3 {
