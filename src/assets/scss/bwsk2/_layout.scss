@@ -357,8 +357,12 @@ nav.navbar {
         margin-bottom: 1rem;
       }
 
-      .card-text {
+      .card-text, p {
         font-size: .85rem;
+      }
+
+      p {
+        margin: 0;
       }
     }
 
@@ -611,8 +615,12 @@ nav.navbar {
           margin-bottom: 1rem;
         }
   
-        .card-text {
+        .card-text, p {
           font-size: .85rem;
+        }
+  
+        p {
+          margin: 0;
         }
       }
   
@@ -640,6 +648,10 @@ nav.navbar {
 
   &.gallery-photo {
     .gallery-photo-item {
+      @include responsive($breakpoint-tablet) {
+        height: 220px;
+      }
+      
       height: 170px;
       object-fit: cover;
     }

@@ -144,24 +144,6 @@ ul.pagination {
   @include responsive($breakpoint-tablet) {
     margin-bottom: 2rem;
   }
-  
-  // img {
-  //   @include responsive($breakpoint-tablet) {
-  //     height: 650px;
-  //   }
-
-  //   @include responsive($breakpoint-phone) {
-  //     height: 550px;
-  //   }
-    
-  //   .content & {
-  //     height: 450px;
-  //   }
-    
-  //   height: 320px;
-  //   object-fit: cover;
-  //   border: none !important;
-  // }
 }
 
 // profile sidebar widget
